@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <div style="padding-top: 5px"></div>
+    <ion-toolbar>
+      <ion-buttons slot="secondary">
+        <ion-button color="secondary">
+          <img [src]="icMenu" width="28px" />
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="primary">
+        <ion-button>
+          <ion-icon slot="icon-only" color="medium" name="search"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title> <img [src]="logo" /> </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Coach page"></app-explore-container>
+</ion-content>

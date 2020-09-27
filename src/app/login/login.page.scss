@@ -1,0 +1,33 @@
+$text-color: #727272;
+
+ion-content.background {
+  --background: url(/assets/images/login-bg.svg) no-repeat 47% 47% fixed;
+}
+div.inputFields {
+  border-bottom: 1px solid grey;
+  width: 300px;
+  display: flex;
+
+  ion-icon {
+    padding: 11px 15px;
+  }
+}
+div.btn-auths {
+  ion-button.btn-login {
+    --border-radius: 5px;
+  }
+
+  ion-button.btn-forgot {
+    color: $text-color;
+    position: absolute;
+    margin: -5px 0px;
+    right: 35px;
+    font-size: 13px;
+  }
+}
+.p-top-30 {
+  padding-top: 30px;
+}
+.p-top-40 {
+  padding-top: 40px;
+}

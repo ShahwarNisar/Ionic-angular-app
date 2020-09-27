@@ -1,0 +1,37 @@
+<ion-content class="background" [fullscreen]="true">
+  <div id="container">
+    <mat-grid-list cols="1" rowHeight="2.5:1">
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile>
+        <div>
+          <img [src]="logo" />
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile rowspan="2">
+        <div>
+          <div class="inputFields">
+            <ion-icon name="person"></ion-icon>
+            <ion-input type="email" placeholder="Username or Email"></ion-input>
+          </div>
+          <div class="p-top-30 inputFields">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <ion-input type="password" placeholder="Password"></ion-input>
+          </div>
+          <div class="p-top-40"></div>
+          <div class="btn-auths">
+            <ion-button
+              class="btn-login"
+              expand="block"
+              [routerLink]="['/home']"
+              >LOGIN</ion-button
+            >
+            <ion-button class="btn-forgot" fill="clear"
+              >Forgot Password?</ion-button
+            >
+          </div>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile></mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</ion-content>
