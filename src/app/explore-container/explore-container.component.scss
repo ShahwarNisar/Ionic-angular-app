@@ -37,13 +37,21 @@ ion-item {
   border-radius: 50px;
   width: 60px;
   height: 60px;
+  position: relative;
 
   img {
     width: 30px;
     height: 30px;
     position: absolute;
-    left: 15px;
-    bottom: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.img-w-h-40 {
+  img {
+    width: 45px;
+    height: 45px;
   }
 }
 .img-container-block-next {
