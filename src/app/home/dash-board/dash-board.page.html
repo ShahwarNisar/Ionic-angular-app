@@ -1,90 +1,9 @@
 <ion-content [fullscreen]="true">
-  <ion-menu side="start" menuId="first" contentId="main">
-    <div>
-      <div class="menu-top">
-        <div class="toggle-menu">
-          <ion-menu-toggle auto-hide="true">
-            <img [src]="leftArrow" alt="Toggle Menu" />
-          </ion-menu-toggle>
-        </div>
-        <div class="user-avator">
-          <img [src]="icUser" alt="User Avator" />
-        </div>
-        <div class="user-info">
-          <h2>Shahwar Nisar</h2>
-          <span>@shahwarnisar</span>
-        </div>
-      </div>
-      <div class="menu-content">
-        <div class="option">
-          <div class="img-container-block">
-            <img [src]="dashboard" alt="Sales" />
-          </div>
-          <ion-label>DashBoard</ion-label>
-          <div class="img-container-block-next">
-            <img [src]="next" alt="Next" />
-          </div>
-        </div>
-        <div class="option">
-          <div class="img-container-block">
-            <img [src]="reporting" alt="Sales" />
-          </div>
-          <ion-label>Reporting</ion-label>
-          <div class="img-container-block-next">
-            <img [src]="next" alt="Next" />
-          </div>
-        </div>
-        <div class="option">
-          <div class="img-container-block">
-            <img [src]="coach" alt="Sales" />
-          </div>
-          <ion-label>Coach</ion-label>
-          <div class="img-container-block-next">
-            <img [src]="next" alt="Next" />
-          </div>
-        </div>
-        <div class="option">
-          <div class="img-container-block">
-            <img [src]="analytics" alt="Sales" />
-          </div>
-          <ion-label>Analytics</ion-label>
-          <div class="img-container-block-next">
-            <img [src]="next" alt="Next" />
-          </div>
-        </div>
-        <div class="option">
-          <div class="img-container-block">
-            <img [src]="alert" alt="Sales" />
-          </div>
-          <ion-label>Alert</ion-label>
-          <div class="img-container-block-next">
-            <img [src]="next" alt="Next" />
-          </div>
-        </div>
-        <div class="option">
-          <div class="img-container-block">
-            <img [src]="settings" alt="Sales" />
-          </div>
-          <ion-label>Settings</ion-label>
-          <div class="img-container-block-next">
-            <img [src]="next" alt="Next" />
-          </div>
-        </div>
-        <div style="margin: 50px"></div>
-        <div class="logout" [routerLink]="['/login']">
-          <ion-menu-toggle auto-hide="true">
-            <ion-icon name="log-out-outline"></ion-icon>
-            <ion-label>Log Out</ion-label>
-          </ion-menu-toggle>
-        </div>
-      </div>
-    </div>
-  </ion-menu>
   <ion-header collapse="condense">
     <div style="padding-top: 5px"></div>
     <ion-toolbar>
       <ion-buttons slot="secondary">
-        <ion-menu-toggle auto-hide="true">
+        <ion-menu-toggle menuId="first" auto-hide="true">
           <ion-button color="secondary">
             <img [src]="icMenu" width="28px" />
           </ion-button>
